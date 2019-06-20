@@ -78,6 +78,7 @@ body{
 .arrow-down{
 	display: flex;
 	flex-direction: column;
+
 	color: white;
 	justify-content: center;
 	align-items: center;
@@ -172,6 +173,15 @@ body{
 	.banner-text h1{
 		font-size: 2em;
 		font-weight: 400;
+	}
+	.banner-text{
+		height: 80%;
+	}
+	.arrow-down{
+		height: 20%;
+	}
+	.arrow-down span, .arrow-down i {
+		font-size: 1.5em;
 	}
 }
 
