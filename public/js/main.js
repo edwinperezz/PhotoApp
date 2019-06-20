@@ -13,12 +13,12 @@ $(function() {
 			if(i===1){
 				$(".right-side").addClass("slideInRight");
 				$(".left-side").addClass("slideInLeft");
-				$(".bio-banner").addClass("bounce");
+				$(".bio-banner").addClass("fadeInDown");
 			}
 			if(i!==1){
 				$(".right-side").removeClass("slideInRight");
 				$(".left-side").removeClass("slideInLeft");
-				$(".bio-banner").removeClass("bounce");
+				$(".bio-banner").removeClass("fadeInDown");
 			}
 		} 
 	});
