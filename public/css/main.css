@@ -170,8 +170,16 @@ body{
 	height: 100%;
 }
 @media screen and (max-width: 600px){
+	.banner{
+		height: 100vh;
+		width: 100vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
 	.banner-text h1{
-		font-size: 2em;
+		font-size: 3em;
 		font-weight: 400;
 	}
 	.banner-text{
