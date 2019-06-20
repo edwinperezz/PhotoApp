@@ -82,6 +82,18 @@ body{
 	height: 10%;
 	background: rgba(0,0,0,0.5);
 }
+.arrow-down span, .arrow-down i {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: bounce;
+	animation-timing-function: ease
+}
+@keyframes bounce {
+	0%   { transform: translateY(0); }
+	30%  { transform: translateY(-10px); }
+	50%  { transform: translateY(0); }
+	100% { transform: translateY(0); }
+}
 .banner-text h1{
 	font-size: 4em;
 	font-weight: 400;
