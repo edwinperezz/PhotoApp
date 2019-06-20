@@ -6,6 +6,23 @@ var sliderPhotos = [
 "https://images.unsplash.com/photo-1559183533-ee5f4826d3db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
 "https://images.unsplash.com/photo-1560547168-3a6b03b1d436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 ];
+$(function() {
+	$.scrollify({
+		section : ".header-container, .bio-container, .banner2, .portfolio",
+		before: function(i){
+			if(i===1){
+				$(".right-side").addClass("slideInRight");
+				$(".left-side").addClass("slideInLeft");
+				$(".bio-banner").addClass("bounce");
+			}
+			if(i!==1){
+				$(".right-side").removeClass("slideInRight");
+				$(".left-side").removeClass("slideInLeft");
+				$(".bio-banner").removeClass("bounce");
+			}
+		} 
+	});
+});
 var first = document.getElementsByClassName("first");
 var second = document.getElementsByClassName("second");
 var t = setInterval(slide, 5000);
