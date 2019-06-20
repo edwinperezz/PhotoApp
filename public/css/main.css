@@ -168,6 +168,12 @@ body{
 .portfolio img{
 	height: 100%;
 }
+@media screen and (max-width: 600px){
+	.banner-text h1{
+		font-size: 2em;
+		font-weight: 400;
+	}
+}
 
 
 
