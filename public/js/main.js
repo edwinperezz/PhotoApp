@@ -25,7 +25,7 @@ $(function() {
 });
 var first = document.getElementsByClassName("first");
 var second = document.getElementsByClassName("second");
-var t = setInterval(slide, 9000);
+var t = setInterval(slide, 10000);
 var i = 1;
 function slide(){
 	if(i === sliderPhotos.length)
@@ -34,6 +34,5 @@ function slide(){
 		first[0].style.backgroundImage = "url("+sliderPhotos[i]+")";
 	else
 		second[0].style.backgroundImage = "url("+sliderPhotos[i]+")";
-		setTimeout(1000);
 	i++;
 }
