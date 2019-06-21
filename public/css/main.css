@@ -277,16 +277,16 @@ body{
 		padding: 6px;
 	}
 	.slider .img{
-		-webkit-background-position: center;
-		-webkit-background-repeat: no-repeat;
-		-webkit-background-size: auto 100%;
-		-webkit-background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-attachment: unset;
 	}
 	.banner2{
-		-webkit-background-position: center;
-		-webkit-background-repeat: no-repeat;
-		-webkit-background-size: auto 100%;
-		-webkit-background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-attachment: unset;
 	}
 }
 
