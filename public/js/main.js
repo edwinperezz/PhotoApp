@@ -8,7 +8,7 @@ var sliderPhotos = [
 ];
 $(function() {
 	$.scrollify({
-		section : ".header-container, .bio-container, .banner2, .portfolio",
+		section : ".slider-container, .bio-container, .banner2, .portfolio",
 		before: function(i){
 			if(i===1){
 				$(".right-side").addClass("slideInRight");
@@ -25,35 +25,15 @@ $(function() {
 });
 var first = document.getElementsByClassName("first");
 var second = document.getElementsByClassName("second");
-var t = setInterval(slide, 5000);
+var t = setInterval(slide, 9000);
 var i = 1;
 function slide(){
-	first[0].style.visibility = "visible";
-	second[0].style.visibility = "visible";
 	if(i === sliderPhotos.length)
 		i = 0;
 	if(i%2==1)
-		second[0].style.backgroundImage = "url("+sliderPhotos[i]+")";
-	else
 		first[0].style.backgroundImage = "url("+sliderPhotos[i]+")";
-	if(i%2==1){
-		first[0].classList.toggle("slide-left");
-		second[0].classList.toggle("right");
-		setTimeout(function(){
-			first[0].classList.toggle("slide-left");
-			first[0].style.visibility = "hidden";
-		},1000);
-		first[0].classList.toggle("right");
-
-	} else {
-		second[0].classList.toggle("slide-left");
-		first[0].classList.toggle("right");
-		setTimeout(function(){
-			second[0].classList.toggle("slide-left");
-			second[0].style.visibility = "hidden";
-		},1000);
-		second[0].classList.toggle("right");
-
-	}
+	else
+		second[0].style.backgroundImage = "url("+sliderPhotos[i]+")";
+		setTimeout(1000);
 	i++;
 }
