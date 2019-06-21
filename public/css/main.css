@@ -27,6 +27,13 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	-webkit-flex: 0 0 100%;
+	-webkit-background-image: url(https://images.unsplash.com/photo-1558935365-f6cb860f3a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80);
+	-webkit-background-position: center;
+	-webkit-background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-webkit-background-attachment: fixed;
+
 }
 .first{
 	transition: transform 1s;
@@ -196,6 +203,9 @@ body{
 	height: 100%;
 }
 @media screen and (max-width: 600px){
+	.slider{
+		display: -webkit-flex;
+	}
 	.slider .img{
 		-webkit-flex: 0 0 100%;
 		-webkit-background-image: url(https://images.unsplash.com/photo-1558935365-f6cb860f3a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80);
@@ -288,6 +298,7 @@ body{
 		background-size: auto 100%;
 		background-attachment: unset;
 	}
+
 }
 
 
