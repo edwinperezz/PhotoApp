@@ -277,9 +277,11 @@ body{
 		padding: 6px;
 	}
 	.banner2{
+
 		-webkit-background-position: center;
 		-webkit-background-repeat: no-repeat;
-		-webkit-background-size: cover;
+		background-size: 100%;
+		width: 100%;
 		-webkit-background-attachment: fixed;
 	}
 }
