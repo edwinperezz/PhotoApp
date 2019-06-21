@@ -243,6 +243,7 @@ body{
 		height: 15%;
 		font-size: 2em;
 		padding-top: 10px;
+		box-sizing: border-box;
 	}
 	.left-side{
 		display: flex;
