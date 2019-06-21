@@ -268,6 +268,12 @@ body{
 		font-size: 0.8em;
 		padding: 6px;
 	}
+	.banner2{
+		-webkit-background-position: center;
+		-webkit-background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-webkit-background-attachment: fixed;
+	}
 }
 
 
