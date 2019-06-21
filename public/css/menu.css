@@ -65,7 +65,14 @@ a{
 .header-title:hover{
 	color: #00f6f6;
 }
-
+@media screen and (max-width: 600px){
+	.header{
+		font-size: 1em;
+	}
+	.menu-container{
+		padding: 0 5px;
+	}
+}
 
 
 
