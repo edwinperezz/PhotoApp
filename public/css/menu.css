@@ -69,7 +69,8 @@ a{
 }
 @media screen and (max-width: 600px){
 	.header{
-		font-size: 1em;
+		font-size: 1.3em;
+		align-items: center;
 	}
 	.menu-container{
 		padding-right: 3%;
