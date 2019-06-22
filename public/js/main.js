@@ -7,7 +7,6 @@ var sliderPhotos = [
 "https://images.unsplash.com/photo-1560547168-3a6b03b1d436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 ];
 $(function(){
-	console.log("here");
 	var headerTitle = $(".header-title");
 	var trigger = $(".bio-container");
 	$(window).scroll(function(){
@@ -15,16 +14,15 @@ $(function(){
 		var winScrollTop =$(window).scrollTop();
 		triggerTop = triggerTop/2;
 		if(winScrollTop>=triggerTop){
+			$(".header").css("transition-delay", "unset");
 			headerTitle.css("transform","translateX(0)");
-			$(".header").css("border-right", "1px solid white");
+			$(".header").css("height", "80%");
 			// headerTitle.addClass("visible");
 		}
-		if(winScrollTop===0){
+		if(winScrollTop<triggerTop){
 			headerTitle.css("transform","translateX(150%)");
-			window.setTimeout(function(){
-				$(".header").css("border-right", "none");
-			},2000);
-
+			$(".header").css("transition-delay", "2s");
+			$(".header").css("height", "0");
 		}
 	});
 });
