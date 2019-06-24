@@ -12,7 +12,7 @@
 	height: 55px;
 	justify-content: flex-end;
 	background-color: rgba(0,0,0,0.8);
-	transition: background-color 1s;
+	transition: background-color 0.6s;
 
 }
 ul{
@@ -34,7 +34,7 @@ a{
 }
 #bars i{
 	font-size: 1.2em;
-	transition: font-size 1s;
+	transition: font-size 0.6s;
 }
 .menu-container ul{
 	display: flex;
@@ -93,7 +93,7 @@ a{
 		background: #000;
 		overflow: hidden;
 		height: 0;
-		transition: height 1s;
+		transition: height 0.6s;
 	}
 	.mobile-item{
 		display: flex;
