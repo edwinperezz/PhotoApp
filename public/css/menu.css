@@ -26,6 +26,11 @@ a{
 	width: 70%;
 	padding-right: 10%;
 }
+.bars{
+	color: #fff;
+	display: none;
+	cursor: pointer;
+}
 .menu-container ul{
 	display: flex;
 	width: 100%;
@@ -68,6 +73,25 @@ a{
 	color: #00f6f6;
 }
 @media screen and (max-width: 600px){
+	.menu-item{
+		display: none;
+	}
+	.bars{
+		display: block;
+	}
+	.mobile-menu{
+		position: absolute;
+		top: 55px;
+		left: 0;
+		width: 100%;
+		flex-direction: column;
+		background: black;
+	}
+	.mobile-item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.header{
 		font-size: 1.3em;
 		align-items: center;
