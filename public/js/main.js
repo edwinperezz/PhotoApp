@@ -6,6 +6,26 @@ var sliderPhotos = [
 "https://images.unsplash.com/photo-1559183533-ee5f4826d3db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
 "https://images.unsplash.com/photo-1560547168-3a6b03b1d436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 ];
+
+var mobileMenuOpen = false;
+
+
+$("#bars").click(function(){
+	if(!mobileMenuOpen){
+		mobileMenuOpen = true;
+		$(".mobile-menu").css("height","15vh");
+		$(".menu").css("background-color", "rgba(0,0,0,1)");
+		$("#bars i").css("font-size","1em");
+	} else{
+		mobileMenuOpen = false;
+		$(".mobile-menu").css("height","0");
+		$(".menu").css("background-color", "rgba(0,0,0,0.8)");
+		$("#bars i").css("font-size","1.2em");
+
+	}
+})
+
+
 $(function(){
 	var headerTitle = $(".header-title");
 	var trigger = $(".bio-container");
@@ -44,6 +64,7 @@ $(function() {
 		} 
 	});
 });
+
 $(".header-title").click(function(){
 	$("html").css("scroll-behavior", "smooth");
 	window.setTimeout(function(){

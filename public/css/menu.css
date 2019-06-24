@@ -12,6 +12,7 @@
 	height: 55px;
 	justify-content: flex-end;
 	background-color: rgba(0,0,0,0.8);
+	transition: background-color 1s;
 
 }
 ul{
@@ -26,10 +27,14 @@ a{
 	width: 70%;
 	padding-right: 10%;
 }
-.bars{
+#bars{
 	color: #fff;
 	display: none;
 	cursor: pointer;
+}
+#bars i{
+	font-size: 1.2em;
+	transition: font-size 1s;
 }
 .menu-container ul{
 	display: flex;
@@ -76,7 +81,7 @@ a{
 	.menu-item{
 		display: none;
 	}
-	.bars{
+	#bars{
 		display: block;
 	}
 	.mobile-menu{
@@ -86,6 +91,9 @@ a{
 		height: 15vh;
 		flex-direction: column;
 		background: #000;
+		overflow: hidden;
+		height: 0;
+		transition: height 1s;
 	}
 	.mobile-item{
 		display: flex;
