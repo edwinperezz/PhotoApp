@@ -13,7 +13,7 @@ var mobileMenuOpen = false;
 $("#bars").click(function(){
 	if(!mobileMenuOpen){
 		mobileMenuOpen = true;
-		$(".mobile-menu").css("height","15vh");
+		$(".mobile-menu").css("height","21vh");
 		$(".menu").css("background-color", "rgba(0,0,0,1)");
 		$("#bars i").css("font-size","1em");
 	} else{
