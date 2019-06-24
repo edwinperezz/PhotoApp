@@ -13,14 +13,27 @@ var mobileMenuOpen = false;
 $("#bars").click(function(){
 	if(!mobileMenuOpen){
 		mobileMenuOpen = true;
+		$(".menu").css("transition-delay","unset");
+		$(".mobile-menu").css("background-color","rgba(0,0,0,1)");
+		$(".mobile-menu").css("transition-delay","unset");
+		$("#bars .ham").removeClass("fa-bars");
+		$("#bars .ham").addClass("fa-times");
 		$(".mobile-menu").css("height","21vh");
 		$(".menu").css("background-color", "rgba(0,0,0,1)");
-		$("#bars i").css("font-size","1em");
+		$(".mobile-item").css("opacity","1");
+		$(".mobile-item").css("transition-delay","0.5s");
 	} else{
 		mobileMenuOpen = false;
+		$(".mobile-item").css("transition-delay","unset");
+		$("#bars .ham").addClass("fa-bars");
+		$("#bars .ham").removeClass("fa-times");
 		$(".mobile-menu").css("height","0");
+		$(".mobile-menu").css("background-color","rgba(0,0,0,0.8)");
+		$(".mobile-menu").css("transition-delay","0.5s");
 		$(".menu").css("background-color", "rgba(0,0,0,0.8)");
-		$("#bars i").css("font-size","1.2em");
+		$(".mobile-item").css("opacity","0");
+		$(".menu").css("transition-delay",".5s");
+
 
 	}
 })
