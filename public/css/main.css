@@ -208,6 +208,12 @@ body{
 .img-container:hover .middle{
 	opacity: 1;
 }
+.portfolio-title{
+	width: 100%;
+	height: 8%;
+	text-align: center;
+	font-size: 2em;
+}
 .portfolio img{
 	height: 100%;
 	width: 100%;
