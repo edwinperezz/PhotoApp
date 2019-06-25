@@ -29,10 +29,10 @@ $("#bars").click(function(){
 		$("#bars .ham").removeClass("fa-times");
 		$(".mobile-menu").css("height","0");
 		$(".mobile-menu").css("background-color","rgba(0,0,0,0.8)");
-		$(".mobile-menu").css("transition-delay","0.5s");
+		$(".mobile-menu").css("transition-delay","0.2s");
 		$(".menu").css("background-color", "rgba(0,0,0,0.8)");
 		$(".mobile-item").css("opacity","0");
-		$(".menu").css("transition-delay",".5s");
+		$(".menu").css("transition-delay",".2s");
 
 
 	}
