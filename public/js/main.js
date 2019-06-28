@@ -22,6 +22,7 @@ $("#bars").click(function(){
 		$(".menu").css("background-color", "rgba(0,0,0,1)");
 		$(".mobile-item").css("opacity","1");
 		$(".mobile-item").css("transition-delay","0.5s");
+		$(".blank").css("height","79vh");
 	} else{
 		mobileMenuOpen = false;
 		$(".mobile-item").css("transition-delay","unset");
@@ -33,6 +34,7 @@ $("#bars").click(function(){
 		$(".menu").css("background-color", "rgba(0,0,0,0.8)");
 		$(".mobile-item").css("opacity","0");
 		$(".menu").css("transition-delay",".2s");
+		$(".blank").css("height","0");
 
 
 	}
@@ -45,12 +47,12 @@ $(function(){
 	$(window).scroll(function(){
 		var triggerTop = trigger.position().top;
 		var winScrollTop =$(window).scrollTop();
+		console.log(winScrollTop);
 		triggerTop = triggerTop/2;
 		if(winScrollTop>=triggerTop){
 			$(".header").css("transition-delay", "unset");
 			headerTitle.css("transform","translateX(0)");
 			$(".header").css("height", "80%");
-			// headerTitle.addClass("visible");
 		}
 		if(winScrollTop<triggerTop){
 			headerTitle.css("transform","translateX(150%)");
