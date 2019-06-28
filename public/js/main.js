@@ -41,7 +41,7 @@ $("#bars").click(function(){
 
 $(function(){
 	var headerTitle = $(".header-title");
-	var trigger = $(".bio-container");
+	var trigger = $("#about");
 	$(window).scroll(function(){
 		var triggerTop = trigger.position().top;
 		var winScrollTop =$(window).scrollTop();
@@ -61,7 +61,7 @@ $(function(){
 });
 $(function() {
 	$.scrollify({
-		section : ".slider-container, .bio-container, .banner2, .portfolio",
+		section : ".content",
 		sectionName : false,
 		before: function(i){
 			if(i===1){
