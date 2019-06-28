@@ -184,26 +184,33 @@ body{
 	padding: 20px;
 	padding-top: 55px;
 	box-sizing: border-box;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	justify-content: space-evenly;
 	overflow: hidden;
 	background: #fff;
 }
 .img-container{
-	height: 27%;
+	height: 30%;
 	width: 30%;
-	margin: 1%;
+	margin: 1.66%;
 	position: relative;
 }
 .img-container:hover .middle{
 	opacity: 1;
 }
 .portfolio-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: 8%;
+	height: 20%;
 	text-align: center;
 	font-size: 2em;
+}
+#gallery-grid{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 #gallery img{
 	height: 100%;
@@ -229,6 +236,7 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
 
 @media screen and (max-width: 600px){
 	.slider{
