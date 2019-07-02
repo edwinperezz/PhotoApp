@@ -32,10 +32,12 @@
 	height: 70%;
 	top: 0;
 	left: 0;	
-	transition: background 1s;
+	opacity: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: rgba(0,0,0,0.5);
+	transition: opacity 1s;
 }
 .cover a{
 	visibility: hidden;
@@ -51,8 +53,8 @@
 	visibility: visible;
 }
 .cover:hover{
+	opacity: 1;
 	
-	background: rgba(0,0,0,0.5);
 
 }
 .name{
@@ -89,6 +91,12 @@
 		-webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
 		border-radius: 15px;
+	}
+	.card:hover .cover{
+		opacity: 1;
+	}
+	.card:hover .cover a{
+		visibility: visible;
 	}
 	.desc{
 		font-size: 0.6em;
