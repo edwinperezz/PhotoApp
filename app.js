@@ -6,7 +6,7 @@ var defaultClient = SquareConnect.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: oauth2
 var oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = "EAAAEDR3jt6VT4LpyXrT3Su_uAgBNsN-NJkHrjJLMVQghywXWwjp_P2GWLFx2BRz";
+oauth2.accessToken = "EAAAEP3TIhoeAeQ4m2_BXPeCiwDJ_08Ie6cZBBux5KAo1YvybHEGpUVjmQ1SqvBP";
 
 var api = new SquareConnect.LocationsApi();
 
@@ -20,6 +20,9 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.get("/", (req,res) =>{
 	res.render("index");
+});
+app.get("/buy",(req,res)=>{
+	res.render("buy");
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
