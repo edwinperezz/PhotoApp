@@ -307,6 +307,10 @@ body{
 		background-size: auto 100%;
 		background-attachment: unset;
 	}
+	.portfolio-title{
+		padding: 5px;
+		height: 10%;
+	}
 
 }
 
