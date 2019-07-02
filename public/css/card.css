@@ -83,6 +83,9 @@
 	.card{
 		width: 100%;
 		height: 20%;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
 	}
 	.desc{
 		font-size: 0.6em;
