@@ -308,11 +308,14 @@ body{
 		background-attachment: unset;
 	}
 	.portfolio-title{
-		padding: 5px;
 		height: 10%;
 	}
 	.card-container{
 		height: 90%;
+	}
+	#gallery{
+		padding: 5px;
+		padding-top: 55px;
 	}
 
 }
