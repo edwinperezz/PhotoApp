@@ -311,6 +311,9 @@ body{
 		padding: 5px;
 		height: 10%;
 	}
+	.card-container{
+		height: 90%;
+	}
 
 }
 
