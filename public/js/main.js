@@ -47,7 +47,6 @@ $(function(){
 	$(window).scroll(function(){
 		var triggerTop = trigger.position().top;
 		var winScrollTop =$(window).scrollTop();
-		console.log(winScrollTop);
 		triggerTop = triggerTop/2;
 		if(winScrollTop>=triggerTop){
 			$(".header").css("transition-delay", "unset");
