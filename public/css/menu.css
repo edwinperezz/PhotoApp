@@ -12,7 +12,7 @@
 	height: 55px;
 	justify-content: flex-end;
 	background-color: rgba(0,0,0,0.8);
-	transition: background-color 0.6s;
+	transition: background-color 0.4s;
 
 }
 ul{
@@ -29,8 +29,13 @@ a{
 }
 #bars{
 	color: #fff;
-	display: none;
 	cursor: pointer;
+}
+#ham{
+	display: none;
+}
+.mobile-item{
+	opacity: 1;
 }
 #bars i{
 	font-size: 1.2em;
@@ -42,17 +47,6 @@ a{
 .menu-container ul li{
 	padding: 0 10px;
 }
-.menu-item{
-	padding: 0 5px;
-	color: #fff;
-}
-.menu-item a{
-	transition: all .5s;
-}
-.menu-item a:hover{
-	color: #00f6f6;
-}
-
 .menu li a{
 	color: #fff;
 }
@@ -75,12 +69,14 @@ a{
 .header-title:hover{
 	color: #00f6f6;
 }
-@media screen and (max-width: 600px){
-	.menu-item{
-		display: none;
+@media screen and (min-width: 600px){
+	.mobile-item{
+		opacity: 1;
 	}
-	#bars{
-		display: block;
+}
+@media screen and (max-width: 600px){
+	#ham{
+		display: inline-block;
 	}
 	.mobile-menu{
 		position: absolute;
@@ -91,16 +87,19 @@ a{
 		background: #000;
 		overflow: hidden;
 		height: 0;
-		transition: height 0.6s, background-color 0.6s;
+		transition: height 0.3s, background-color 0.4s;
 	}
 	.blank{
 		position: absolute;
-		height: 0;
+		height: 100vh;
 		left: 0;
-		top: 21vh; 
+		top: 0; 
 		margin-top: 55px;
 		width: 100%;
 		background: rgba(0,0,0,0.5);
+		display: none;
+		z-index: -10;
+
 
 	}
 	.mobile-item{

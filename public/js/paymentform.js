@@ -1,3 +1,5 @@
+
+
 // Build your sqPaymentForm here
 // Set the application ID
 const applicationId = "sandbox-sq0idp-vVL3UNi61L6gqyTykieg7A";
@@ -22,8 +24,8 @@ inputStyles: [{
 	lineHeight: '24px',
 	padding: '16px',
     boxSizing: 'border-box',
-	placeholderColor: '#a0a0a0',
-	backgroundColor: 'transparent',
+    placeholderColor: '#a0a0a0',
+    backgroundColor: 'transparent',
 }],
 
 // Initialize the credit card placeholders

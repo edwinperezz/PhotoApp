@@ -7,8 +7,6 @@ var sliderPhotos = [
 "https://images.unsplash.com/photo-1560547168-3a6b03b1d436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
 ];
 
-var mobileMenuOpen = false;
-
 
 
 
