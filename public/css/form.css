@@ -87,6 +87,9 @@ button:focus{
 	#sq-ccbox{
 		width: 300px;
 	}
+	input{
+		padding: 10px;
+	}
 }
 
 
