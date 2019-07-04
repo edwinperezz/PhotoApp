@@ -67,7 +67,6 @@ callbacks: {
     // Uncomment the following block to
     // 1. assign the nonce to a form field and
     // 2. post the form to the payment processing handler
-    
     document.getElementById('card-nonce').value = nonce;
     document.getElementById('nonce-form').submit();
     

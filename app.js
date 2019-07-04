@@ -22,16 +22,14 @@ oauth2.accessToken = accessToken;
 app.get("/", (req,res) =>{
 	res.render("index");
 });
-app.get("/buy",(req,res)=>{
-	res.render("buy");
+app.get("/checkout",(req,res)=>{
+	res.render("checkout");
 });
 
 
 app.post('/process-payment', function(req, res){
   const requestParams = req.body;
-
   const idempotencyKey = require('crypto').randomBytes(64).toString('hex');
-
   // Charge the customer's card
   const transactionsApi = new squareConnect.TransactionsApi();
   const requestBody = {
