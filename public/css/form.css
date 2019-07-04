@@ -9,6 +9,7 @@ fieldset{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 #sq-ccbox{
 	width: 400px;
