@@ -21,6 +21,7 @@ inputStyles: [{
 	fontSize: '16px',
 	lineHeight: '24px',
 	padding: '16px',
+    boxSizing: 'border-box',
 	placeholderColor: '#a0a0a0',
 	backgroundColor: 'transparent',
 }],
