@@ -6,7 +6,9 @@ $(document).ready(function(){
 			$("#mobile").css("transition-delay","");
 			$("#mobile").css("height","");
 			$("#bars").unbind("click");
+			$("#form-container").removeClass("hidden");
 		} else {
+			$("#form-container").addClass("hidden");
 			var mobileMenuOpen = false;
 			$("#bars").click(function(){
 				if(!mobileMenuOpen){

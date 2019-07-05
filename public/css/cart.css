@@ -1,6 +1,7 @@
 .checkout-container{
 	width: 100%;
 	display: flex;
+	position: relative;
 
 }
 .cart{
@@ -64,4 +65,9 @@
 	width: 20%;
 	display: flex;
 	justify-content: center;
+}
+@media screen and (max-width: 600px){
+	.cart{
+		width: 100%;
+	}
 }
