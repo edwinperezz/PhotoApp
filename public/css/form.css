@@ -7,7 +7,7 @@ fieldset{
 	padding: 0;
 	border: 0;
 }
-#form-container{
+.form-container{
 	width: 40%;
 	height: calc(100vh - 55px);
 	margin-top: 55px;
@@ -129,16 +129,17 @@ button:focus{
 	.clicked i{
 		color: #fff;
 	}
-	.hidden{
-		transform: translateX(100%);
+	#visible{
+		transform: translateX(0);
 	}
-	#form-container{
+	.form-container{
 		width: 100%;
 		position: fixed;
 		top: 0;
 		left: 0;
 		height: 100vh;
 		margin-top: unset;
+		transform: translateX(100%);
 		transition: transform 0.3s;
 	}
 	#form-header{
