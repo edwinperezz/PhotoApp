@@ -108,7 +108,7 @@ button:focus{
 }
 
 @media screen and (max-width: 600px){
-	#buy-arrow{
+	.buy-arrow{
 		width: 40px;
 		height: 40px;
 		display: flex;
@@ -121,6 +121,13 @@ button:focus{
 		border-radius: 50%;
 		border: 2px solid #000;
 		z-index: 1;
+		transition: background 0.3s;
+	}
+	.clicked{
+		background: #000;
+	}
+	.clicked i{
+		color: #fff;
 	}
 	.hidden{
 		transform: translateX(100%);
