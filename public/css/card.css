@@ -9,9 +9,10 @@
 }
 .card:hover{
 	cursor: pointer;
-	-webkit-box-shadow: 12px 12px 27px -8px rgba(0,0,0,0.7);
-	-moz-box-shadow: 12px 12px 27px -8px rgba(0,0,0,0.7);
-	box-shadow: 12px 12px 27px -8px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 10px 10px 63px -39px rgba(0,0,0,0.31);
+	-moz-box-shadow: 10px 10px 63px -39px rgba(0,0,0,0.31);
+	box-shadow: 10px 10px 63px -39px rgba(0,0,0,0.31);
+
 }
 .card-header{
 	width: 100%;
