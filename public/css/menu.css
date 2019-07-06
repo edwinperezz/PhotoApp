@@ -11,7 +11,7 @@
 	z-index: 5;
 	height: 55px;
 	justify-content: flex-end;
-	background-color: rgba(255,255,255,1);
+	/*background-color: rgba(255,255,255,1);*/
 }
 ul{
 	padding: 0;
