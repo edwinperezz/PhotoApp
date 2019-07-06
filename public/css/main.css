@@ -47,34 +47,7 @@ body{
 	position: relative;
 }
 
-/*.slider{
-	width: 100%;
-	height: 100%;
-	display: flex;
-}
-.slider .img{
-	background-image: url(https://images.unsplash.com/photo-1558935365-f6cb860f3a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	-webkit-flex: 0 0 100%;
-	-webkit-background-image: url(https://images.unsplash.com/photo-1558935365-f6cb860f3a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80);
-	-webkit-background-position: center;
-	-webkit-background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-webkit-background-attachment: fixed;
 
-}
-.first{
-	transition: transform 1s;
-}*/
-/*.content .slider .second{
-	background-image: url(https://images.unsplash.com/photo-1560547168-3a6b03b1d436?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
-}
-.second{
-	transition: transform 1s;
-}*/
 .banner-content{
 	position: absolute;
 	top: 0;
@@ -102,40 +75,6 @@ body{
 	height: 10%;
 	background: rgba(255,255,255,0.2);
 }
-/*.first{
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	animation-name: rightToLeft;
-	animation-timing-function: ease;
-	-webkit-animation-duration: 20s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-name: rightToLeft;
-	-webkit-animation-timing-function: ease;
-}
-.second{
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
-	animation-name: leftToRight;
-	animation-timing-function: ease;
-	-webkit-animation-duration: 20s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-name: leftToRight;
-	-webkit-animation-timing-function: ease;
-}
-@-webkit-keyframes rightToLeft{
-	0% { -webkit-flex: 0 0 100% }
-	20% { -webkit-flex: 0 0 0 }
-	50% { -webkit-flex: 0 0 0 }
-	70% { -webkit-flex: 0 0 100% }
-	100% { -webkit-flex: 0 0 100% }
-}
-@-webkit-keyframes leftToRight{
-	0% { -webkit-flex: 0 0 0 }
-	20% { -webkit-flex: 0 0 100% }
-	50% { -webkit-flex: 0 0 100% }
-	70% { -webkit-flex: 0 0 0 }
-	100% { -webkit-flex: 0 0 0 }
-}*/
 .arrow-down span, .arrow-down i {
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -230,6 +169,9 @@ body{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+#portfo{
+	min-height: 100vh;
+}
 
 @media screen and (max-width: 600px){
 	/*.slider{
@@ -242,96 +184,96 @@ body{
 		-webkit-background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		-webkit-background-attachment: fixed;
-	}*/
-	.content{
-		height: 100vh;
-		width: 100%;
-		overflow: hidden;
-	}
-	.banner-content{
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
+		}*/
+
+		.content{
+			height: 100vh;
+			width: 100%;
+			overflow: hidden;
+		}
+		.banner-content{
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+		.banner-text h1{
+			font-size: 3em;
+			font-weight: 400;
+		}
+		.banner-text{
+			height: 80%;
+		}
+		.arrow-down{
+			height: 20%;
+		}
+		.arrow-down span, .arrow-down i {
+			font-size: 1.5em;
+		}
+		.bio{
+			display: flex;
+			flex-direction: column;
+		}
+		.bio-banner{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 15%;
+			font-size: 2em;
+			padding-top: 10px;
+			box-sizing: border-box;
+		}
+		.left-side{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 30%;
+		}
+		.bio-img{
+			width: 70%;
+			height: 95%;
+		}
+		.left-side h4{
+			height: 5%;
+		}
+		.right-side{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 55%;
+			font-size: 0.7em;
+			padding: 6px;
+		}
+		.slider .img{
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			background-attachment: unset;
+		}
+		#portfolio-landing{
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto 100%;
+			background-attachment: unset;
+		}
+		.portfolio-title{
+			height: 100px;
+		}
+		.card-container{
+			height: 90%;
+		}
+		#gallery{
+			padding: 5px;
+		}
 
 	}
-	.banner-text h1{
-		font-size: 3em;
-		font-weight: 400;
-	}
-	.banner-text{
-		height: 80%;
-	}
-	.arrow-down{
-		height: 20%;
-	}
-	.arrow-down span, .arrow-down i {
-		font-size: 1.5em;
-	}
-	.bio{
-		display: flex;
-		flex-direction: column;
-	}
-	.bio-banner{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 15%;
-		font-size: 2em;
-		padding-top: 10px;
-		box-sizing: border-box;
-	}
-	.left-side{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 30%;
-	}
-	.bio-img{
-		width: 70%;
-		height: 95%;
-	}
-	.left-side h4{
-		height: 5%;
-	}
-	.right-side{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: 55%;
-		font-size: 0.7em;
-		padding: 6px;
-	}
-	.slider .img{
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-attachment: unset;
-	}
-	#portfolio-landing{
-		width: 100%;
-		height: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-attachment: unset;
-	}
-	.portfolio-title{
-		height: 10%;
-	}
-	.card-container{
-		height: 90%;
-	}
-	#gallery{
-		padding: 5px;
-		padding-top: 55px;
-	}
-
-}
 
 
 
