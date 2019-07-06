@@ -54,16 +54,12 @@ a{
 	justify-content: flex-end;
 	width: 30%;
 	font-size: 1.5em;
-	padding-right: 10px;
 	overflow: hidden;
-	border-right: 1px solid #000;
-	height: 0;
+	height: 80%;
 	transition: height 1.5s;
 }
 .header-title{
-	transform: translateX(150%);
-	transition: transform 1s ease, color 0.5s;
-	transition-delay: 1s;
+	letter-spacing: 3px
 }
 .header-title:hover{
 	color: #00f6f6;
@@ -110,10 +106,12 @@ a{
 		transition: opacity 0.3s;
 	}
 	.header{
-		font-size: 1.3em;
+		font-size: 1.2em;
 		align-items: center;
+		width: 40%;
 	}
 	.menu-container{
+		width: 60%;
 		padding-right: 3%;
 	}
 }
