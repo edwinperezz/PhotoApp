@@ -61,9 +61,6 @@ a{
 .header-title{
 	letter-spacing: 3px
 }
-.header-title:hover{
-	color: #00f6f6;
-}
 @media screen and (min-width: 600px){
 	.mobile-item{
 		opacity: 1;
