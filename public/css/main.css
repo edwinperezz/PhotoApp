@@ -119,6 +119,8 @@ body{
 }
 .left-side h4{
 	margin: 10px 0;
+	font-weight: 400;
+	letter-spacing: 2px;
 }
 .bio-img img{
 	width: 100%;
@@ -327,6 +329,7 @@ body{
 		font-size: 1.5em;
 	}
 	.bio{
+		width: 90%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -346,20 +349,23 @@ body{
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 30%;
+		height: 40%;
+		border: none;
 	}
 	.bio-img{
 		width: 70%;
-		height: 95%;
+		height: 90%;
 	}
 	.left-side h4{
-		height: 5%;
+		height: 10%;
+		font-weight: 400;
+		letter-spacing: 2px;
 	}
 	.right-side{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		height: 55%;
+		height: 45%;
 		font-size: 0.7em;
 		padding: 6px;
 	}
@@ -376,9 +382,6 @@ body{
 	}
 	.card-container{
 		height: 90%;
-	}
-	#gallery{
-		padding: 5px;
 	}
 
 }
