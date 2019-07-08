@@ -188,7 +188,7 @@ body{
 .img-container{
 	width: 300px;
 	height: 400px;
-	margin: 2% 0;
+	margin: 2%;
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
@@ -197,7 +197,7 @@ body{
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
-
+	transition: transform 0.6s ease-in-out;
 }
 .portfo-img{
 	width: 100%;
