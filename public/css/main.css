@@ -1,0 +1,407 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+.landing{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.landing img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.landing-cover{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.2);
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.content{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#portfolio-landing{
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://images.unsplash.com/photo-1560307002-306085d5ca4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+
+.banner-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+}
+.banner-text{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 90%;
+	background: rgba(255,255,255,0.2);
+}
+.arrow-down{
+	display: flex;
+	flex-direction: column;
+
+	color: white;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 10%;
+	background: rgba(255,255,255,0.2);
+}
+.arrow-down span, .arrow-down i {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: bounce;
+	animation-timing-function: ease
+}
+@-webkit-keyframes bounce {
+	0%   { transform: translateY(0); }
+	30%  { transform: translateY(-10px); }
+	50%  { transform: translateY(0); }
+	100% { transform: translateY(0); }
+}
+.banner-text h1{
+	font-size: 4em;
+	font-weight: 400;
+}
+.bio{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 55px;
+	background: #fff;
+	width: 85%;
+	margin: 0 auto;
+	height: 100%;
+	box-sizing: border-box;
+}
+.bio-banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 15%;
+	font-size: 3em;
+}
+.bio-banner span{
+	font-weight: 200;
+	letter-spacing: 3px;
+}
+.bio-img{
+	height: 30%;
+	width: 75%;
+}
+.left-side h4{
+	margin: 10px 0;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.bio-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.left-side{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	height: 85%;
+	padding-top: 5%;
+	border-right: 1px solid #E8E8E8;
+}
+.right-side{
+	box-sizing: border-box;
+	width: 70%;
+	height: 85%;
+	padding: 30px;
+}
+
+.portfolio-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	font-size: 2em;
+}
+
+.card-container{
+	display: flex;
+	width: 100%;
+	height: 80%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+#portfo{
+	min-height: 100vh;
+	width: 80%;
+	margin: 0 auto;
+	padding: 55px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	flex-direction: column;
+}
+.portfo-title{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	height: 70px;
+	font-size: 2em;
+	padding-left: 20px;
+}
+.images{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.img-container{
+	width: 300px;
+	height: 400px;
+	margin: 2%;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	transition: transform 0.6s ease-in-out;
+}
+.portfo-img{
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.portfo-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.img-container h4{
+	width: 100%;
+	height: 7%;
+	margin: 0;
+	padding: 0 15px;
+	box-sizing: border-box;
+	font-size: 1.3em;
+}
+.img-container span{
+	height: 14%;
+	overflow-y: scroll;
+	color: #3a3a3a;
+	font-size: 0.7em;
+	width: 100%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.img-container span::-webkit-scrollbar{
+	display: none;
+}
+.new-container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.new-form{
+	display: flex;
+	width: 400px;
+	flex-direction: column;
+}
+.new-form input{
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: none;
+	margin: 5px 0;
+	transition: padding 0.4s ease;
+}
+.new-form input:last-of-type{
+	margin-bottom: 20px;
+}
+.new-form input:hover{
+	padding: 5px 15px;
+}
+.new-form input:focus{
+	padding: 5px 15px;
+	outline: 1px solid black;
+}
+.new-form button{
+	overflow: hidden;
+	height: 35px;
+	background: none;
+	border: 2px solid #000;
+	outline: none;
+	font-size: 15px;
+	cursor: pointer;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	transition: border 0.4s ease;
+}
+.new-form button div{
+	margin: 0;
+	transform: translateX(45%);
+	transition: transform 0.4s;
+	height: 100%;
+	padding: 5px 0;
+	box-sizing: border-box;
+	text-align: left;
+}
+.new-form button div i{
+	transform: translateX(400px);
+}
+.new-form button:hover div{
+	transform: translateX(-70%);
+	color: #66FF00;
+}
+.new-form button:hover{
+	border: 2px solid #66FF00;
+}
+
+@media screen and (max-width: 600px){
+	.new-form{
+		width: 350px;
+	}
+	.content{
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
+	}
+	.banner-content{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+	}
+	.banner-text h1{
+		font-size: 3em;
+		font-weight: 400;
+	}
+	.banner-text{
+		height: 80%;
+	}
+	.arrow-down{
+		height: 20%;
+	}
+	.arrow-down span, .arrow-down i {
+		font-size: 1.5em;
+	}
+	.bio{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bio-banner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 15%;
+		font-size: 2em;
+		padding-top: 10px;
+		box-sizing: border-box;
+	}
+	.left-side{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 40%;
+		border: none;
+	}
+	.bio-img{
+		width: 70%;
+		height: 90%;
+	}
+	.left-side h4{
+		height: 10%;
+		font-weight: 400;
+		letter-spacing: 2px;
+	}
+	.right-side{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 45%;
+		font-size: 0.7em;
+		padding: 6px;
+	}
+	#portfolio-landing{
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-attachment: unset;
+	}
+	.portfolio-title{
+		height: 100px;
+	}
+	.card-container{
+		height: 90%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
