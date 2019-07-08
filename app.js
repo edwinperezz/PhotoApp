@@ -65,35 +65,6 @@ app.post("/new", upload.single('image'), (req,res) => {
 app.get("/show", (req,res)=>{
   res.render("show");
 });
-app.get("/checkout",(req,res)=>{
-	res.render("checkout");
-});
-app.post('/process-payment', function(req, res){
-  const requestParams = req.body;
-  const idempotencyKey = require('crypto').randomBytes(64).toString('hex');
-  // Charge the customer's card
-  const transactionsApi = new squareConnect.TransactionsApi();
-  const requestBody = {
-    card_nonce: requestParams.nonce,
-    amount_money: {
-      amount: 100, // $1.00 charge
-      currency: 'USD'
-    },
-    idempotency_key: idempotencyKey
-  };
-  transactionsApi.charge(locationId, requestBody).then(function(data) {
-    const json= JSON.stringify(data);
-    res.status(200).json({
-      'title': 'Payment Successful',
-      'result': json
-    });
-  }, function(error) {
-    res.status(500).json({
-      'title': 'Payment Failure',
-      'result': error.response.text
-    });
-  });
-});
 
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
