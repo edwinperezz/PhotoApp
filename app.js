@@ -19,7 +19,6 @@ const defaultClient = squareConnect.ApiClient.instance;
 // Configure OAuth2 access token for authorization: oauth2
 const oauth2 = defaultClient.authentications['oauth2'];
 oauth2.accessToken = accessToken;   
-console.log(process.env.DATABASEURL);
 mongoose.connect(process.env.DATABASEURL, { 
   useNewUrlParser: true,
   useCreateIndex: true
@@ -35,7 +34,6 @@ app.get("/", (req,res) =>{
     if(err){
       console.log(err);
     } else {
-      console.log(photos);
       res.render("index", {images: photos});
     }
   });
