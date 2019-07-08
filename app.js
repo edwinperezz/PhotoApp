@@ -6,9 +6,6 @@ const bodyParser    = require('body-parser'),
       Photo         = require("./models/photo"),
       multer        = require("multer");
       
-// Set the Access Token and Location Id
-const accessToken = 'EAAAEP3TIhoeAeQ4m2_BXPeCiwDJ_08Ie6cZBBux5KAo1YvybHEGpUVjmQ1SqvBP';
-const locationId = 'CBASEFoNja9W744N5jVfaDj8pyogAQ';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,12 +20,7 @@ var storage = multer.diskStorage({
   }
 });
 var upload = multer({storage: storage});
-// Set Square Connect credentials
-const defaultClient = squareConnect.ApiClient.instance;
 
-// Configure OAuth2 access token for authorization: oauth2
-const oauth2 = defaultClient.authentications['oauth2'];
-oauth2.accessToken = accessToken;   
 mongoose.connect(process.env.DATABASEURL, { 
   useNewUrlParser: true,
   useCreateIndex: true
