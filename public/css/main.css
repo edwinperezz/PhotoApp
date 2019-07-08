@@ -187,9 +187,10 @@ body{
 	flex-wrap: wrap;
 	flex-direction: column;
 	box-sizing: border-box;
-	-webkit-box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
-	-moz-box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
-	box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+
 }
 .portfo-img{
 	width: 100%;
@@ -219,6 +220,9 @@ body{
 	width: 100%;
 	padding: 0 15px;
 	box-sizing: border-box;
+}
+.img-container span::-webkit-scrollbar{
+	display: none;
 }
 .new-container{
 	width: 100%;
