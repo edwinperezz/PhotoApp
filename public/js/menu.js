@@ -11,13 +11,14 @@ $(document).ready(function(){
 			$("#form-container").addClass("hidden");
 			var mobileMenuOpen = false;
 			$("#bars").click(function(){
+				console.log("clicked");
 				if(!mobileMenuOpen){
 					mobileMenuOpen = true;					
 					$(".mobile-menu").css("background-color","rgba(255,255,255,1)");
 					$(".mobile-menu").css("transition-delay","unset");
 					$("#bars #ham").removeClass("fa-bars");
 					$("#bars #ham").addClass("fa-times");
-					$(".mobile-menu").css("height","21vh");
+					$(".mobile-menu").css("height","20vh");
 					$(".mobile-item").css("opacity","1");
 					$(".mobile-item").css("transition-delay","0.2s");
 					$(".blank").css("display","block");

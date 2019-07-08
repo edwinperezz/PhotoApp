@@ -1,5 +1,5 @@
 html{
-	/*scroll-behavior: smooth;*/
+	scroll-behavior: smooth;
 }
 body{
 	margin: 0;
@@ -136,22 +136,7 @@ body{
 	height: 80%;
 	padding: 30px;
 }
-#gallery{
-	padding: 20px;
-	padding-top: 55px;
-	box-sizing: border-box;
-	overflow: hidden;
-	background: #fff;
-}
-.img-container{
-	height: 30%;
-	width: 30%;
-	margin: 1.66%;
-	position: relative;
-}
-.img-container:hover .middle{
-	opacity: 1;
-}
+
 .portfolio-title{
 	display: flex;
 	justify-content: center;
@@ -171,109 +156,220 @@ body{
 }
 #portfo{
 	min-height: 100vh;
+	width: 80%;
+	margin: 0 auto;
+	padding: 55px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	flex-direction: column;
+}
+.portfo-title{
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	height: 70px;
+	font-size: 2em;
+	padding-left: 20px;
+}
+.images{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.img-container{
+	width: 300px;
+	height: 400px;
+	margin: 2% 0;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	box-sizing: border-box;
+	-webkit-box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
+	-moz-box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
+	box-shadow: 15px 15px 32px -18px rgba(0,0,0,0.24);
+}
+.portfo-img{
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.portfo-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.img-container h4{
+	width: 100%;
+	height: 7%;
+	margin: 0;
+	padding: 0 15px;
+	box-sizing: border-box;
+	font-size: 1.3em;
+}
+.img-container span{
+	height: 15%;
+	overflow-y: scroll;
+	color: #3a3a3a;
+	font-size: 0.7em;
+	width: 100%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.new-container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.new-form{
+	display: flex;
+	width: 400px;
+	flex-direction: column;
+}
+.new-form input{
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: none;
+	margin: 5px 0;
+	transition: padding 0.4s ease;
+}
+.new-form input:last-of-type{
+	margin-bottom: 20px;
+}
+.new-form input:hover{
+	padding: 5px 15px;
+}
+.new-form input:focus{
+	padding: 5px 15px;
+	outline: 1px solid black;
+}
+.new-form button{
+	overflow: hidden;
+	height: 35px;
+	background: none;
+	border: 2px solid #000;
+	outline: none;
+	font-size: 15px;
+	cursor: pointer;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	transition: border 0.4s ease;
+}
+.new-form button div{
+	margin: 0;
+	transform: translateX(45%);
+	transition: transform 0.4s;
+	height: 100%;
+	padding: 5px 0;
+	box-sizing: border-box;
+	text-align: left;
+}
+.new-form button div i{
+	transform: translateX(400px);
+}
+.new-form button:hover div{
+	transform: translateX(-70%);
+	color: #66FF00;
+}
+.new-form button:hover{
+	border: 2px solid #66FF00;
 }
 
 @media screen and (max-width: 600px){
-	/*.slider{
-		display: -webkit-flex;
+	.content{
+		height: 100vh;
+		width: 100%;
+		overflow: hidden;
 	}
-	.slider .img{
-		-webkit-flex: 0 0 100%;
-		-webkit-background-image: url(https://images.unsplash.com/photo-1558935365-f6cb860f3a47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80);
-		-webkit-background-position: center;
-		-webkit-background-repeat: no-repeat;
-		-webkit-background-size: cover;
-		-webkit-background-attachment: fixed;
-		}*/
-
-		.content{
-			height: 100vh;
-			width: 100%;
-			overflow: hidden;
-		}
-		.banner-content{
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-
-		}
-		.banner-text h1{
-			font-size: 3em;
-			font-weight: 400;
-		}
-		.banner-text{
-			height: 80%;
-		}
-		.arrow-down{
-			height: 20%;
-		}
-		.arrow-down span, .arrow-down i {
-			font-size: 1.5em;
-		}
-		.bio{
-			display: flex;
-			flex-direction: column;
-		}
-		.bio-banner{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 15%;
-			font-size: 2em;
-			padding-top: 10px;
-			box-sizing: border-box;
-		}
-		.left-side{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 30%;
-		}
-		.bio-img{
-			width: 70%;
-			height: 95%;
-		}
-		.left-side h4{
-			height: 5%;
-		}
-		.right-side{
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			height: 55%;
-			font-size: 0.7em;
-			padding: 6px;
-		}
-		.slider .img{
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: auto 100%;
-			background-attachment: unset;
-		}
-		#portfolio-landing{
-			width: 100%;
-			height: 100%;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: auto 100%;
-			background-attachment: unset;
-		}
-		.portfolio-title{
-			height: 100px;
-		}
-		.card-container{
-			height: 90%;
-		}
-		#gallery{
-			padding: 5px;
-		}
+	.banner-content{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
 
 	}
+	.banner-text h1{
+		font-size: 3em;
+		font-weight: 400;
+	}
+	.banner-text{
+		height: 80%;
+	}
+	.arrow-down{
+		height: 20%;
+	}
+	.arrow-down span, .arrow-down i {
+		font-size: 1.5em;
+	}
+	.bio{
+		display: flex;
+		flex-direction: column;
+	}
+	.bio-banner{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 15%;
+		font-size: 2em;
+		padding-top: 10px;
+		box-sizing: border-box;
+	}
+	.left-side{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 30%;
+	}
+	.bio-img{
+		width: 70%;
+		height: 95%;
+	}
+	.left-side h4{
+		height: 5%;
+	}
+	.right-side{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 55%;
+		font-size: 0.7em;
+		padding: 6px;
+	}
+	#portfolio-landing{
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-attachment: unset;
+	}
+	.portfolio-title{
+		height: 100px;
+	}
+	.card-container{
+		height: 90%;
+	}
+	#gallery{
+		padding: 5px;
+	}
+
+}
 
 
 

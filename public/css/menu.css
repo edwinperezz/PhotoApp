@@ -97,7 +97,7 @@ a{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 7vh;
+		height: 10vh;
 		opacity: 0;
 		transition: opacity 0.3s;
 	}

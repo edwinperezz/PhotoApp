@@ -36,66 +36,17 @@
 		</div>
 	</div>
 	<div id="portfo">
-		<div id="gallery">
-			<div class="portfolio-title"><span>portfolio</span></div>
-			<div class="card-container">
-				<div class="card" onclick="">
-					<div class="card-header">
-						<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1550795428390">
-						<div class="cover">
-							<a href="/checkout">Buy Now</a>
-						</div>
-						<div class="name"><span class="item-name">iPhone Xs</span></div>
-						<div class="desc">
-							<span>The iPhone X's display is so immersive, the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. Say hello to the future.
-							</span>
-						</div>
-					</div>
-
+		<div class="portfo-title"><span>Portfolio</span></div>
+		<div class="images">
+			<% images.forEach(function(photo){ %>
+			<div class="img-container">
+				<div class="portfo-img">
+					<img src="<%= photo.image %>">
 				</div>
-				<div class="card" onclick="">
-					<div class="card-header">
-						<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1550795428390">
-						<div class="cover">
-							<a href="/checkout">Buy Now</a>
-						</div>
-						<div class="name"><span class="item-name">iPhone Xs</span></div>
-						<div class="desc">
-							<span>The iPhone X's display is so immersive, the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. Say hello to the future.
-							</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="card" onclick="">
-					<div class="card-header">
-						<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1550795428390">
-						<div class="cover">
-							<a href="/checkout">Buy Now</a>
-						</div>
-						<div class="name"><span class="item-name">iPhone Xs</span></div>
-						<div class="desc">
-							<span>The iPhone X's display is so immersive, the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. Say hello to the future.
-							</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="card" onclick="">
-					<div class="card-header">
-						<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-select-2019-family?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=95&amp;op_usm=0.5,0.5&amp;.v=1550795428390">
-						<div class="cover">
-							<a href="/checkout">Buy Now</a>
-						</div>
-						<div class="name"><span class="item-name">iPhone Xs</span></div>
-						<div class="desc">
-							<span>The iPhone X's display is so immersive, the device itself disappears into the experience. And so intelligent it can respond to a tap, your voice, and even a glance. Say hello to the future.
-							</span>
-						</div>
-						
-					</div>
-				</div>
+				<h4><%= photo.title %></h4>
+				<span><%= photo.description %></span>
 			</div>
+			<% }); %>
 		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
